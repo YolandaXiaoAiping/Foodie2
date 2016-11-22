@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="src/css/mainpage.css">
+		<link rel="stylesheet" type="text/css" href="semantic/out/semantic.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<title>Foodie</title>
+	</head>
+	<body>
+		<div class="ui secondary  menu">
+			<div class="item">
+				<div class="ui icon input">
+					<input type="text" placeholder="Search...">
+					<i class="search link icon"></i>
+				</div>
+			</div>
+		  <a class="item active" id="mainpage_home">
+			Home
+		  </a>
+		  <a class="item" id="dashboard">
+			Dashboard
+		  </a>
+		  <a class="item">
+			Caneldar
+		  </a>
+			<div class="right menu">
+				<a class="ui item">
+					<div class="ui dropdown">
+						<div class="text"><span class="Username"></span></div>
+						<i class="dropdown icon"></i>
+						<div class="menu">
+							<div class="item" id="view_profile">View Profile</div>
+							<div class="item" id="sign_out">Sign out</div>	
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div id="user_profile">
+			<div id="user_image"></div>
+			<h4 class="ui horizontal divider header">
+				<i class="tag icon"></i>
+				Profile
+			</h4>
+			<!--profile content-->
+			<div class="ui middle centered aligned divided list" style="margin:10px">
+				<div class="item">
+					<i class="user icon avatar"></i>
+					<div class="right floated content">
+						<div class="ui button" id="edit1">Edit</div>
+						<div class="ui button" id="ok1" style="display:none">OK</div>
+					</div>
+					<div class="content">
+					  <div class="header">Username</div>
+					  <span class="Username" id="username_span"></span>
+					  <input id="username_edit" style="display:none" type="text">
+					</div>
+				</div>
+				<div class="item">
+					<i class="at icon"></i>
+					<div class="right floated content">
+						
+					</div>
+					<div class="content">
+						<div class="header">Emial</div>
+						  <span class="Email"></span>
+					</div>
+				</div>
+				<div class="item">
+					<i class="birthday icon"></i>
+					<div class="right floated content">
+						<div class="ui button" id="edit2">Edit</div>
+						<div class="ui button" id="ok2" style="display:none">OK</div>
+					</div>
+					<div class="content">
+						<div class="header">Birthday</div>
+							<span class="Birthday" id="birthday_span"></span>
+							<input id="birthday_edit" style="display:none" type="date">
+					</div>
+				</div>
+				<div class="item">
+					<i class="heterosexual icon"></i>
+					<div class="right floated content">
+						<div class="ui button" id="edit3">Edit</div>
+						<div class="ui button" id="ok3" style="display:none">OK</div>
+					</div>
+					<div class="content">
+						<div class="header">Gender</div>
+							<span class="Gender" id="gender_span"></span>
+							<!--gender-->
+							<div class="inline fields" id="gender_radio" style="display:none">
+								<div class="field">
+									<div class="ui radio checkbox">
+										<input type="radio" name="gender" checked="" tabindex="0" class="hidden" value="Male">
+										<label>Male</label>
+									</div>
+								</div>
+								<div class="field">
+									<div class="ui radio checkbox">
+										<input type="radio" name="gender" tabindex="0" class="hidden" value="Female">
+										<label>Female</label>
+									</div>
+								</div>
+						
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="/src/js/view_profile.js"></script>
+		<script src="semantic/out/semantic.min.js"></script>
+	</body>
+</html>

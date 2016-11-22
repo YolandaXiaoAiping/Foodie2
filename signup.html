@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="src/css/signup.css">
+		<link rel="stylesheet" type="text/css" href="semantic/out/semantic.min.css">
+		<script src="semantic/out/semantic.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<title>Foodie</title>
+	</head>
+	<body>
+		<img id="signup_img" alt="food image" src="src/img/signup.jpg">
+		<div id="signup_form">
+			<div>
+				<label>
+					<span>User Name: </span><br>
+					<input id="username" type="text" name="username" required>
+				<label>
+			</div>
+			<div>
+				<label>
+					<span>Email: </span><br>
+					<input id="email" type="email" name="email" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Password: </span><br>
+					<input id="password-1" type="password" name="password" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Confirm Password: </span><br>
+					<input id="password-2" type="password" name="password" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Birthday</span><br>
+					<input id="birthday" type="date" name="birthday" required>
+				</label>
+			</div>
+			<div>
+				<label id="gender">
+					<span>Gender: </span><br>
+					<input type="radio" name="gender" value="male" checked>Male
+					<input type="radio" name="gender" video="female">Female<br>
+				</label>
+			</div>
+			<!--warning-->
+			<div class="ui warning message" id="form_not_finished" style="display:none">
+			  <i class="close icon"></i>
+			  <div class="header">
+				Please finish the form before you submit!
+			  </div>
+			</div>
+			<div class="ui warning message" id="email_duplicated" style="display:none">
+			  <i class="close icon"></i>
+			  <div class="header">
+				This email address has been used by another account!
+			  </div>
+			</div>
+			<div class="ui warning message" id="password_not_same" style="display:none">
+			  <i class="close icon"></i>
+			  <div class="header">
+				Passwords are not the same! Please try again!
+			  </div>
+			</div>
+			<div>
+				<button class="ui button" id="signup_submit">Submit</button>
+			</div>
+			<div class="ui horizontal divider">
+				Or
+			</div>
+			<div id="social_btn">
+				<span>Log in with your social account</span><br>
+				<button class="ui facebook button" id="facebook">
+				  <i class="facebook icon"></i>
+				  Facebook
+				</button>
+				<button class="ui google plus button">
+				  <i class="google plus icon"></i>
+				  Google Plus
+				</button>
+			</div>
+		</div>
+		<script src="src/js/signup.js"></script>
+	</body>
+</html>
