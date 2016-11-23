@@ -34,6 +34,13 @@
       "birthday": "2016-11-10",
       "gender": "Male",
       "username": "test3"
+    },
+    {
+      "username": "Tong",
+      "email": "m@gmail.com",
+      "password": "1111",
+      "birthday": "2016-11-10",
+      "gender": "male"
     }
   ]
 }

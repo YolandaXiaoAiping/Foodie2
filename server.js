@@ -39,7 +39,7 @@ app.get('/signup',function(req, res) {
   }
 
   res.render('signup.html');
-  
+
 });
 
 /***********************get sign up form**********************/
@@ -69,8 +69,13 @@ app.post('/signup',function(req,res){
             state: "Success"
         });
 	}
-	
+
 });
+/*****************************log in page****************************/
+app.post('/login', function(req, res){
+  console.log(req.body);
+});
+
 /********************go to user main page****************************/
 app.get('/mainpage',function(req,res){
 	console.log(req.session.email);
@@ -120,7 +125,7 @@ app.post('/viewprofile',function(req,res){
 		//console.log(us);
 		return res.json(us);
 	}
-	
+
 });
 
 /********************************change username*************************************/
@@ -179,5 +184,6 @@ app.get('/signout',function(req,res){
 	req.session.destroy();
 	res.redirect('/');
 });
+
 app.listen(process.env.PORT || 3000);
 console.log('Listening on port 3000');

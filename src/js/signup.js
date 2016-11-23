@@ -31,9 +31,9 @@ $("#signup_submit").click(function(){
 			url:"/signup",
 			type:"POST",
 			dataType: "json",
-            contentType: "application/json; charset=utf-8",
-            data: JSON.stringify( fm ),
-            success: function(response) {
+      contentType: "application/json; charset=utf-8",
+      data: JSON.stringify( fm ),
+      success: function(response) {
 				if(response['state'] == 'Success'){
 					window.location = '/mainpage.html';
 				}else{
@@ -41,7 +41,7 @@ $("#signup_submit").click(function(){
 					$("#password_not_same").hide();
 					$("#form_not_finished").hide();
 				}
-            }
+    	}
 		});
 	}
 });
