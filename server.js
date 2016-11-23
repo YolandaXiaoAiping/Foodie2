@@ -71,9 +71,39 @@ app.post('/signup',function(req,res){
 	}
 
 });
+/*****************************go to log in page****************************/
+app.get('/login', function(req, res){
+  res.render('login.html');
+});
+
 /*****************************log in page****************************/
 app.post('/login', function(req, res){
   console.log(req.body);
+  var users = JSON.parse(fs.readFileSync('user.json','utf8'));
+  var email = req.body.username;
+  var pwd = req.body.password;
+  var v_email = false;
+  var v_pwd = false;
+  var username;
+  for(var i = 0;i < users.users.length;i++){
+    if(users.users[i].email == email){
+      v_email = true;
+      username = users.users[i].username;
+      if(users.users[i].password == pwd)
+        v_pwd = true;
+    }
+  }
+  if(v_email == false)
+    return res.json({state: "EmailError"});
+  else {
+    if(v_pwd == false)
+      return res.json({state: "PwdError"});
+    else {
+      req.session.email = req.body.username;
+  		req.session.username = username;
+      return res.json({state: "Success"});
+    }
+  }
 });
 
 /********************go to user main page****************************/

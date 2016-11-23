@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="foodie_icon" href="Food_icon.png">
 		<link type="text/css" rel="stylesheet" href="src/css/index.css">
+		<link rel="stylesheet" type="text/css" href="semantic/out/semantic.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		<title>Foodie</title>
 	</head>
@@ -12,20 +13,24 @@
 		<div id="homepage_body">
 			<nav>
 				<ul>
-					<li>Login</li>
-					<li>Sign Up</li>
+					<li class="item">
+						<a class="ui button" id="login_button">Log in</a>
+					</li>
+					<li>
+						<a class="ui button" id="sign_up_btn">Sign up</a>
+					</li>
 				</ul>
 				</nav>
-				<h2>Foodie</h2>
-				<h2>Explore Flavors Around UofT Campus</h2>
-				<button type="button" id="homepage_btn">Join Us Now</button>
-			<nav>
+				<h2 class="centered">Foodie</h2>
+				<h2 class="centered">Explore Flavors Around UofT Campus</h2>
+				<button type="button" class="centered" id="homepage_btn">Join Us Now</button>
 		</div>
 
 		<div id="homepage_footer">
 
 		</div>
 		<script src="src/js/index.js"></script>
+		<script src="semantic/out/semantic.min.js"></script>
 	</body>
 
 </html>

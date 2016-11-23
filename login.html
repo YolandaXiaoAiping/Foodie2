@@ -21,11 +21,26 @@
               <label>Password</label>
               <input id="pwd" type="password" name="password" placeholder="Password">
             </div>
+
+            <div id="wrong_email" class="ui warning message" id="password_not_same" style="display:none">
+      			  <i class="close icon"></i>
+      			  <div class="header">
+      				The email is invalid!
+      			  </div>
+      			</div>
+            
+            <div id="wrong_pwd" class="ui warning message" id="password_not_same" style="display:none">
+      			  <i class="close icon"></i>
+      			  <div class="header">
+      				The password is invalid!
+      			  </div>
+      			</div>
             <button id="log_in" class="ui button" type="button">LOG IN</button>
           </form>
         </div>
       </div>
     </div>
     <script src="src/js/login.js"></script>
+    <script src="semantic/out/semantic.min.js"></script>
   </body>
 </html>

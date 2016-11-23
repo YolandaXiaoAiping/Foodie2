@@ -11,3 +11,13 @@ $("#homepage_btn").click(function(){
 			}
 		});
 });
+
+$("#login_button").click(function(){
+	$.ajax({
+		url:"/login",
+		type:"GET",
+		success:function(response){
+			window.location='/login.html';
+		}
+	});
+});
