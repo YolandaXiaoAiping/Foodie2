@@ -11,7 +11,7 @@
 
 #signup_form{
 	padding-top:30px;
-	padding-left: 60%;
+	padding-left:60%;
 }
 
 #signup_form input[type=text]{
@@ -76,11 +76,9 @@
 
 #signup_submit{
 	margin-top:20px;
-	margin-left:70px;
+	margin-left:120px;
 }
 
 #social_btn{
 	margin-top:10px;
 }
-
-

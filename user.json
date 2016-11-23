@@ -34,6 +34,20 @@
       "birthday": "2016-11-10",
       "gender": "Male",
       "username": "test3"
+    },
+    {
+      "username": "Test3",
+      "email": "t3@mail.com",
+      "password": "123",
+      "birthday": "2016-11-02",
+      "gender": "male"
+    },
+    {
+      "username": "test4",
+      "email": "t4@mail.com",
+      "password": "123",
+      "birthday": "2016-11-02",
+      "gender": "male"
     }
   ]
 }

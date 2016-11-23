@@ -10,11 +10,11 @@
 
 #homepage_body ul{
 	list-style-type:none;
+	padding-top: 10px;
 }
 
 #homepage_body li{
 	color:white;
-	padding:10px;
 	float:right;
 	display:block;
 }
@@ -42,5 +42,5 @@
 }
 #homepage_footer {
 	background:linear-gradient(45deg, #ffb366, #ff6600);
-	
+
 }
